@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+header h1 {
+    margin-left: 80px;
+}
+
+#darkmode {
+    margin-right: 80px;
+    font-weight: 600;
+}
+
+#search {
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+}
+
+#searchcountry {
+    width: 500px;
+    height: 50px;
+    border: 0px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+
+#searchcountry[type=text] {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    padding-left: 40px;
+}
+
+#filter {
+    height: 50px;
+    width: 200px;
+    border: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#grid {
+    margin: 80px;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    place-items: center;
+}
+
+#grid img {
+    width: 400px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+option {
+    width: 100%;
+}
+
+#country {
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.7) 0px 8px 24px;
+    border-radius: 10px;
+}
+
+#holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grid h1 {
+    width: 80%;
+    font-size: 26px;
+}
+
+#grid p {
+    width: 80%;
+    margin: 0;
+}
+
+#grid span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 1830px) {
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1441px) {
+    #grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1001px) {
+    #grid {
+        grid-template-columns: 1fr;
+    }
+    #searchcountry {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 751px) {
+    #search {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    header h1 {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    #darkmode {
+        margin-right: 20px;
+    }
+    #grid {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    #country {
+        width: 320px;
+        height: 430px;
+    }
+
+    #country img {
+        width: 320px;
+        height: 200px;
+    }
+}
+

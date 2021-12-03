@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest countries</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><a href=".">Where in the world?</a></h1>
+        <div id="darkmode">
+            <i class="far fa-moon"></i>
+            Dark Mode
+        </div>
+    </header>
+    <section id="search">
+        <input type="text" placeholder="Search for a country..." id="searchcountry">
+        <select name="filter" id="filter">
+            <option hidden disabled selected value="Filter by Region">Filter by Region</option>
+            <option value="Africa">Africa</option>
+            <option value="Americas">America</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+    </section>
+    <section id="grid">
+        
+    </section>
+    <script src="api.js" type="text/javascript"></script>
+</body>
+</html>
